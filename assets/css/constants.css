@@ -1,0 +1,15 @@
+/*
+ * Constants
+ *
+ * Keep colors and reusable theme values here.
+ */
+:root {
+  --theme-color-primary: #171717;
+  --theme-color-secondary: #F2F2F1;
+  --theme-color-tertiary: #C07DAB;
+  --theme-color-quarterery: #E05634;
+  --theme-color-body: #171717;
+  --theme-transition: all 0.3s ease-in-out;
+  --theme-font-family: "proxima-nova", sans-serif;
+  --theme-font-family-2:"gothicus", serif;
+}
