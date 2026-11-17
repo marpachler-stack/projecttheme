@@ -1,0 +1,2 @@
+git config --global user.email "marie-christine.pachler@edu.fh-joanneum.at"
+git config --global user.name "marpachler-stack"
