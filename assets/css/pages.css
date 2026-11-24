@@ -4,8 +4,142 @@
  * Add page-specific theme styles here.
  */
 
-.project_highlight {
+.project_highlight,
+.hero_title_and_key {
   background: #dfe0df;
+}
+
+.frame_91 {
+  background: #171f2c;
+}
+
+.frame-91 {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(34rem, 68vw, 54rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(82, 98, 124, 0.28), transparent 28rem),
+    radial-gradient(circle at 78% 72%, rgba(73, 92, 120, 0.18), transparent 30rem),
+    repeating-linear-gradient(112deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 7px),
+    #171f2c;
+}
+
+.frame-91::before,
+.frame-91::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(185, 196, 210, 0.08);
+  transform: rotate(-8deg);
+}
+
+.frame-91::before {
+  width: 38rem;
+  height: 38rem;
+  left: -24rem;
+  top: 18%;
+  border-radius: 50%;
+}
+
+.frame-91::after {
+  width: 30rem;
+  height: 30rem;
+  right: -20rem;
+  bottom: -8rem;
+  border-radius: 50%;
+}
+
+.frame-91__card {
+  position: relative;
+  width: min(82%, 39rem);
+  margin: clamp(3.5rem, 8vw, 7rem) auto 0;
+  padding: clamp(2rem, 5vw, 4.25rem) clamp(1.5rem, 4vw, 3.5rem);
+  color: #171717;
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.7), transparent 30%),
+    repeating-linear-gradient(8deg, rgba(73, 73, 73, 0.028) 0 1px, transparent 1px 5px),
+    #e8e6dc;
+  border: 0.35rem solid rgba(23, 23, 23, 0.18);
+  box-shadow: 0 1.25rem 3.5rem rgba(0, 0, 0, 0.28), inset 0 0 2.5rem rgba(80, 77, 66, 0.16);
+  clip-path: polygon(
+    1% 0, 7% 0.5%, 13% 0.1%, 21% 0.6%, 29% 0.2%, 37% 0.7%,
+    46% 0.1%, 55% 0.5%, 64% 0.2%, 73% 0.6%, 82% 0.1%, 91% 0.5%, 99% 0,
+    99.5% 8%, 99.1% 18%, 99.6% 29%, 99.2% 40%, 99.7% 51%,
+    99.1% 63%, 99.6% 74%, 99.2% 86%, 99.7% 96%, 99% 100%,
+    91% 99.4%, 82% 99.8%, 73% 99.3%, 64% 99.7%, 55% 99.2%,
+    46% 99.8%, 37% 99.3%, 29% 99.7%, 21% 99.2%, 13% 99.8%, 7% 99.3%, 1% 100%,
+    0.5% 90%, 0.1% 79%, 0.6% 68%, 0.2% 57%, 0.7% 46%, 0.2% 35%, 0.6% 24%, 0.1% 12%
+  );
+}
+
+.frame-91__title {
+  margin: 0;
+  color: #171717;
+  font-family: var(--theme-font-family-2);
+  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.frame-91__text {
+  margin: clamp(1.25rem, 3vw, 2.25rem) auto 0;
+  max-width: 26rem;
+  color: #171717;
+  font-family: var(--theme-font-family);
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  line-height: 1.5;
+}
+
+.frame-91__key {
+  width: min(54%, 17rem);
+  margin: clamp(1rem, 2.5vw, 2rem) auto 0;
+}
+
+.frame-91__key-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.frame-91__menu {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(1.5rem, 4vw, 3.5rem);
+  display: flex;
+  gap: clamp(1.25rem, 4vw, 3.5rem);
+  transform: translateX(-50%);
+  color: rgba(242, 242, 241, 0.72);
+}
+
+.frame-91__menu-mark {
+  width: clamp(2.25rem, 4vw, 3.25rem);
+  height: clamp(2.25rem, 4vw, 3.25rem);
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .frame-91 {
+    min-height: 42rem;
+  }
+
+  .frame-91__card {
+    width: 86%;
+    margin-top: 3.5rem;
+  }
+
+  .frame-91__title {
+    font-size: clamp(2rem, 10vw, 3.15rem);
+  }
+
+  .frame-91__menu {
+    bottom: 2rem;
+  }
 }
 
 .project-highlight {
