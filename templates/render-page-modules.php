@@ -89,6 +89,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'starting_page_desktop':
       get_template_part('template-parts/flex/layout', 'starting-page-desktop'); break;
+
+    case 'homepage_desktop':
+      get_template_part('template-parts/flex/layout', 'homepage-desktop'); break;
   }
 
   if (function_exists('section_close')) {
